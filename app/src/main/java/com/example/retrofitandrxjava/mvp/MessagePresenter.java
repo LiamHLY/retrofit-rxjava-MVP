@@ -5,13 +5,10 @@ import android.os.Build;
 import androidx.annotation.RequiresApi;
 
 import com.example.retrofitandrxjava.base.BasePresenter;
-
-import com.example.retrofitandrxjava.entity.BaseObjectBean;
 import com.example.retrofitandrxjava.entity.MessageNotificateEntity;
 import com.example.retrofitandrxjava.mvp.model.MessageModel;
 import com.example.retrofitandrxjava.schedulers.BaseSchedulerProvider;
 import com.example.retrofitandrxjava.schedulers.SchedulerProvider;
-import com.example.retrofitandrxjava.util.ResponseTransform;
 
 import java.util.List;
 

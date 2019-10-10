@@ -1,5 +1,6 @@
 package com.example.retrofitandrxjava.util;
 
+import com.example.retrofitandrxjava.BuildConfig;
 import com.example.retrofitandrxjava.net.APIService;
 
 import okhttp3.OkHttpClient;
@@ -35,7 +36,7 @@ public class NetWorkManager {
 
         //初始化retrofit
         retrofit = new Retrofit.Builder()
-                .baseUrl("http://47.102.205.161/")
+                .baseUrl(BuildConfig.SERVICE_ADDRESS)
                 .client(client)
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
